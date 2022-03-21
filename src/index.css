@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	@apply font-body;
+}
+
+.btn {
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	background: linear-gradient(240.72deg, #57F9FB 39.54%, #252E5C 96.61%);
+}
+
+.title-shadow {
+	text-shadow: 0px 5.08242px 5.08242px rgba(0, 0, 0, 0.25), 0px 5.08242px 5.08242px rgba(0, 0, 0, 0.25);
+}
+
+.des-shadow {
+	text-shadow: 0px 2.48352px 2.48352px rgba(0, 0, 0, 0.25), 0px 2.48352px 2.48352px rgba(0, 0, 0, 0.25);
+}
+
+.time-shadow {
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.border-shape {
+	border-image: linear-gradient(to left, #fed330 0%, #fed330 20%, #e63841 20%, #e63841 20%, #e63841 40%, #5ed6fd 40%, #5ed6fd 40%, #e63841 40%, #5ed6fd 40%, #5ed6fd 40%, #5ed6fd 60%, #45c33b 60%, #45c33b 80%, #1172c0 80%, #1172c0 80%, #1172c0 100%) 1 stretch repeat;
+}
+.tshape-1 {
+	left: -9%;
+	top: 8%;
+}
+
+.tshape-2 {
+	right: -2%;
+	top: 15%;
+}
+
+.tshape-3 {
+	left: -7%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.tshape-4 {
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.tshape-5 {
+	left: 5%;
+	top: 75%;
+}
+.tshape-6 {
+	right: -5%;
+	top: 74%;
+}
+.tshape-7 {
+	left: 20%;
+    bottom: 5%;
+}
+@media(max-width: 1400px) {
+	.tshape-1 {
+		left: 0;
+	}
+	.tshape-3 {
+		left: -3%;
+	}
+	.tshape-6 {
+		right: -2%;
+	}
+}
+@media(max-width: 1200px) {
+	.tshape-1 {
+		left: 0;
+	}
+	.tshape-2 {
+		right: 0;
+	}
+	.tshape-3 {
+		left: 0;
+	}
+	.tshape-6 {
+		right:0;
+	}
+}
+.quizon-image {
+	max-width: 350px;
+	width: 100%;
+}
+.swiper-slide.swiper-slide-active.swiper-slide-visible, 
+.swiper-slide.swiper-slide-visible.swiper-slide-next,
+.swiper-slide.swiper-slide-visible {
+ 	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+.swiper-button-next, 
+.swiper-button-prev {
+	color: #920DFC !important;
+	top: 40% !important;
+    width: calc(var(--swiper-navigation-size)/ 40 * 20) !important;
+}
+.swiper-slide.swiper-slide-visible img {
+	background: #920DFC;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	padding: 10px;
+}
+.swiper-slide.swiper-slide-thumb-active img{
+	background: #FFFFFF;
+}
+@media(max-width: 1024px) {
+	.charecter-tab li img {
+		max-width: 25px !important;
+	}
+	.btn {
+		background: linear-gradient(240.72deg, #57F9FB 0, #252E5C 96.61%);
+	}
+}
